@@ -13,7 +13,7 @@
     <!-- build:css({app,.tmp}) /css/main.css -->
     <link rel="stylesheet" href="/_bower_components/normalize-css/normalize.css">
     <link rel="stylesheet" href="/css/syntax.css">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/app.css">
     <!-- endbuild -->
 
     <!-- build:js(app) /js/head-scripts.js -->
@@ -24,12 +24,36 @@
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
   <body>
-    <div class="container">
+  <div id="wrap">
+    <div id="header" class="cf">
+        <div class="container">
+            <ul class="nav">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Process</a></li>
+                <li><a href="#">Contact Us!</a></li>
+            </ul>
+            <div class="logo">Holy Archers</div>
+        </div>
+    </div>
     {{ content }}
+    </div> <!-- wrap -->
+    <div id="footer" class="cf">
+        <div class="container">
+            <ul class="nav">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Process</a></li>
+                <li><a href="#">Contact Us!</a></li>
+            </ul>
+            <div class="copyright">HolyArchers &copy;2014</div>
+        </div>
+    </div>
 
     {% include scripts.html %}
     {% include googleanalytics.html %}
-    </div>
 
   </body>
 </html>

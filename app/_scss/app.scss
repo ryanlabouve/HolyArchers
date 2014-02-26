@@ -1,0 +1,36 @@
+$display-font: "adelle", "Georgia", "Times New Roman", serif;
+$body-font: "proxima-nova", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+$c--dark: #282424;
+$c--light: #ffffff;
+$c--primary-1: #282424;
+$c--primary-2: #c7b572;
+$c--secondary-1: #a41d21;
+$c--secondary-2: #81bcd3;
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+html, body { height: 100%; }
+#wrap { min-height: 100%; margin-bottom: -20px;}
+
+@import "skeleton";
+@import "base";
+@import "layout";
