@@ -12,6 +12,7 @@
 
     <!-- build:css({app,.tmp}) /css/main.css -->
     <link rel="stylesheet" href="/_bower_components/normalize-css/normalize.css">
+    <link rel="stylesheet" href="/_bower_components/slicknav/slicknav.css">
     <link rel="stylesheet" href="/css/syntax.css">
     <link rel="stylesheet" href="/css/app.css">
     <!-- endbuild -->
@@ -27,7 +28,7 @@
   <div id="wrap">
     <div id="header" class="cf">
         <div class="container">
-            <ul class="nav">
+            <ul class="nav" id="menu">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Work</a></li>
                 <li><a href="#">Services</a></li>
@@ -37,6 +38,7 @@
             <div class="logo">Holy Archers</div>
         </div>
     </div>
+    <div id="menu-mobile"></div>
     {{ content }}
     </div> <!-- wrap -->
     <div id="footer" class="cf">
@@ -54,6 +56,8 @@
 
     {% include scripts.html %}
     {% include googleanalytics.html %}
+    
+    <script src="/_bower_components/slicknav/jquery.slicknav.min.js"></script> 
 
   </body>
 </html>
