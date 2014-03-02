@@ -115,10 +115,17 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.app %>/_scss',
-          src: '**/*.{scss,sass}',
+          src: 'app.{scss,sass}',
           dest: '.tmp/css',
           ext: '.css'
         }]
+        // files: [{
+        //   expand: true,
+        //   cwd: '<%= yeoman.app %>/_scss',
+        //   src: '**/*.{scss,sass}',
+        //   dest: '.tmp/css',
+        //   ext: '.css'
+        // }]
       },
       server: {
         options: {
@@ -128,10 +135,17 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.app %>/_scss',
-          src: '**/*.{scss,sass}',
+          src: 'app.{scss,sass}',
           dest: '.tmp/css',
           ext: '.css'
         }]
+        // files: [{
+        //   expand: true,
+        //   cwd: '<%= yeoman.app %>/_scss',
+        //   src: '**/*.{scss,sass}',
+        //   dest: '.tmp/css',
+        //   ext: '.css'
+        // }]
       }
     },
     autoprefixer: {

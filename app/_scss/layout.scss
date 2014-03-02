@@ -17,6 +17,14 @@
 /* #Site Styles
 ================================================== */
 
+header h1 {
+	font-weight: light;
+	// font-family: $body-font;
+	color: #ccc;
+	font-size: 4em;
+	margin-bottom: 1em;
+
+}
 .btn:link, .btn:visited {
 	background: $c--secondary-1;
 	padding: 0.3em 0.9em;
@@ -49,9 +57,20 @@ h2 {
 
 	margin-bottom: 1.5em;
 }
+
+.service .name {
+	margin-bottom: 0.1em;
+	margin-top: 0.3em;
+	font-size: 2.7em;
+}
+
+.process .name {
+	color: $c--primary-2;
+}
+
 .container-wrapper {
-	padding-top: 3em;
-	padding-bottom: 5em;
+	padding-top: 4em;
+	padding-bottom: 4em;
 }
 #header, #footer {
 	background: $c--dark;
@@ -110,10 +129,23 @@ h2 {
 }
 
 #work {
+	.project.project-1 {
+		background: $c--light url(/img/lifehouse-cc.jpg) center center no-repeat;
+		background-size: cover;
+	}
+	.project.project-2 {
+		background: $c--light url(/img/chris-crump.jpg) center center no-repeat;
+		background-size: cover;
+	}
+	.project.project-3 {
+		background: $c--light url(/img/holyarchers-project.jpg) center center no-repeat;
+		background-size: cover;
+	}
 	.project {
 		border-radius: 4px;
 		position: relative;
 		background: $c--light url(/img/placeholder.gif) center center no-repeat;
+		background-size: cover;
 
 		height: 15em;
 		.name {
@@ -142,7 +174,7 @@ h2 {
 }
 
 #services {
-	padding-top: 5em !important;
+	padding-top: 2em !important;
 	text-align: center;
 
 	img { border-radius: 3px; }
@@ -153,6 +185,7 @@ h2 {
 
 #process {
 	text-align: center; 
+	padding-bottom: 4em;
 	img { border-radius: 3px; }
 	.stage {
 	}
@@ -161,6 +194,8 @@ h2 {
 .contact-wrapper {
 	background: $c--secondary-1;
 	color: white;
+	font-size: 4em;
+	text-align: center;
 }
 
 .service .icon, .process .icon {
