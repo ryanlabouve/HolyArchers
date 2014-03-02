@@ -195,11 +195,25 @@ h2 {
 
 .contact-wrapper {
 	background: $c--secondary-1;
-	color: white;
+	// color: white;
+	color: #efefef;
 	font-size: 4em;
 	text-align: center;
 	line-height: 1.3;
+	font-weight: 900;
 
+	a:link, a:visited {
+		background: white;
+		text-decoration: none;
+		font-size: 0.8em;
+		padding: 0.3em 1em;
+		color: #333;
+		background-color: #efefef;
+	}
+
+	a:hover, a:active {
+		background-color: #ffffff;
+	}
 }
 
 .service .icon, .process .icon {
@@ -272,5 +286,11 @@ h2 {
 
 .slicknav_menu {
 	background: #eee !important;
+	a:link, a:visited {
+		color: #999;
+	}
+	a:hover, a:active {
+		color: #333;
+	}
 }
 	
