@@ -12,7 +12,7 @@
 
     <!-- build:css({app,.tmp}) /css/main.css -->
     <link rel="stylesheet" href="/_bower_components/normalize-css/normalize.css">
-    <link rel="stylesheet" href="/_bower_components/slicknav/slicknav.css">
+    <link rel="stylesheet" href="/css/slicknav.css">
     <link rel="stylesheet" href="/css/syntax.css">
     <link rel="stylesheet" href="/css/app.css">
     <!-- endbuild -->
@@ -20,6 +20,7 @@
     <!-- build:js(app) /js/head-scripts.js -->
     <!-- Replace with a custom modernizer build for production -->
     <script src="/_bower_components/modernizr/modernizr.js"></script>
+    <script src="/_bower_components/jquery/jquery.min.js"></script>
     <!-- endbuild -->
 <script type="text/javascript" src="//use.typekit.net/fvc4vqm.js"></script>
 <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -56,8 +57,7 @@
 
     {% include scripts.html %}
     {% include googleanalytics.html %}
-    
-    <script src="/_bower_components/slicknav/jquery.slicknav.min.js"></script> 
+    <script src="/js/jquery.slicknav.min.js"></script> 
 
   </body>
 </html>

@@ -272,6 +272,7 @@ module.exports = function (grunt) {
             // Copy moves asset files and directories
             'img/**/*',
             'fonts/**/*',
+            'js/jquery.slicknav.min.js', // There's probably a better way to do this
             // Like Jekyll, exclude files & folders prefixed with an underscore
             '!**/_*{,/**}',
             // Explicitly add any files your site needs for distribution here

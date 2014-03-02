@@ -266,13 +266,20 @@ h2 {
 		.contact-wrapper {
 			font-size: 2.8em;
 		}
+
+		#footer {
+			.copyright { text-align: center; }
+			.nav {
+				font-size: 0.8em;
+			}
+		}
 	}
 
 	.slicknav_menu {
 	display:none;
 }
 
-@media screen and (max-width: 40em) {
+@media screen and (max-width: 767px) {
 	/* #menu is the original menu */
 	.js #menu {
 		display:none;
