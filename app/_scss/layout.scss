@@ -26,15 +26,16 @@ header h1 {
 
 }
 .btn:link, .btn:visited {
-	background: $c--secondary-1;
-	padding: 0.3em 0.9em;
-	border-radius: 3px;
+	border: 1px solid white;
+	/* border-bottom: 1px solid \$c--secondary-1; */
+	padding: 0.4em 0.9em;
+	border-radius: 1px;
 	margin-left: -6px;
 	text-shadow: 0 1px 0 rgba(0,0,0,0.05);
 }
 
 .btn:hover {
-	background: lighten($c--secondary-1, 7);
+	background: rgba($c--secondary-1, .3);
 	box-shadow: 0;
 }
 
@@ -61,7 +62,7 @@ h2 {
 .service .name {
 	margin-bottom: 0.1em;
 	margin-top: 0.3em;
-	font-size: 2.7em;
+	font-size: 2.5em;
 }
 
 .process .name {
@@ -72,6 +73,7 @@ h2 {
 	padding-top: 4em;
 	padding-bottom: 4em;
 }
+
 #header, #footer {
 	background: $c--dark;
 	color: $c--light;
@@ -98,6 +100,30 @@ h2 {
 	}
 }
 
+#header {
+	position: absolute;
+	top: 2em;
+	left: 0;
+	background: transparent;
+	width: 100%;
+	z-index: 999;
+}
+
+.jumbotron-wrapper {
+	background: url(/img/earth-outline.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	color: white !important;
+	height: 90vh;
+	position: relative;
+	.container {
+		position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+}
+
 .jumbotron {
 	.logo {
 		font-family: $body-font;
@@ -108,15 +134,30 @@ h2 {
 	}
 
 	.lead {
-		font-family: $display-font;
+		font-family: $body-font;
+		font-weight: 900;
+		text-decoration: none;
+		font-style: normal;
+		font-size: 2.8em;
+		color: rgba(255,255,255,0.9);
 		text-align: center;
-		width: 70%;
-		margin: 1.5em auto 2.5em auto;
-		color: $c--primary-2;
+		margin-top: 1em;
+	}
+
+	.lead-sub {
+		font-family: $display-font;
+		font-size: 1.8em;
+		line-height: 1.4;
+		text-align: center;
+		width: 60%;
+		margin: .5em auto 1.5em auto;
+		color: rgba(255,255,255,0.6);
 		font-style: italic;
 	}
+
+
 	.img {
-		width: 25%;
+		width: 20%;
 		margin: auto;
 		img {
 		border-radius: 3px;
@@ -181,12 +222,12 @@ h2 {
 
 	img { border-radius: 3px; }
 	.service {
-		
+
 	}
 }
 
 #process {
-	text-align: center; 
+	text-align: center;
 	padding-bottom: 4em;
 	img { border-radius: 3px; }
 	.stage {
@@ -284,7 +325,7 @@ h2 {
 	.js #menu {
 		display:none;
 	}
-	
+
 	.js .slicknav_menu {
 		display:block;
 	}
@@ -300,4 +341,86 @@ h2 {
 		color: #333;
 	}
 }
-	
+
+.cta {
+	text-align: center;
+}
+.btn.btn-jumbo:link,
+.btn.btn-jumbo:visited {
+	display: inline-block;
+	background: white;
+	color: $c--dark;
+	font-size: 1.5em;
+	text-decoration: none;
+	padding: 1em 2em;
+	font-weight: bold;
+	border: none;
+}
+.btn.btn-jumbo:hover,
+.btn.btn-jumbo:active {
+	color: white;
+	background: $c--secondary-1;
+	border: none;
+}
+
+
+.work-wrapper {
+	padding-top: 8em;
+	padding-bottom: 8em;
+	h1 {
+		text-align: center;
+		color: rgba(255,255,255,0.8);
+		margin-bottom: 0.7em;
+	}
+}
+.bio {
+	text-align: center;
+}
+.bio-name a:link, .bio-name a:visited {
+	color: white;
+	font-size: 1.8em;
+	font-family: $body-font;
+	font-weight: 900;
+	text-decoration: none;
+	display: inline-block;
+	margin-top: 1em;
+}
+.bio-name a:visited, .bio-name a:active {
+	color: darken(white, .3);
+}
+
+.bio-position {
+	color: white;
+	font-size: 1.4em;
+	font-family: $display-font;
+	font-style: italic;
+	font-weight: light;
+	line-height: 1.8;
+}
+.bio-pic {
+	width: 225px;
+	height: 225px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin: auto;
+	border: 1px solid rgba(255,255,255,0.05);
+	box-shadow: 0 0 20px rgba(0,0,0,0.4);
+	img {
+		max-width: 100%;
+	}
+
+}
+
+.bio-social {
+	li {
+		display: inline-block;
+		margin: 0.5em;
+	}
+	a {
+		color: rgba(255,255,255,0.5);
+		font-size: 1.3em;
+	}
+	a:hover {
+		color: rgba(255,255,255,0.9);
+	}
+}
