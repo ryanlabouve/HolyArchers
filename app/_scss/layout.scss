@@ -139,6 +139,7 @@ h2 {
 		text-decoration: none;
 		font-style: normal;
 		font-size: 2.8em;
+		line-height: 1.2;
 		color: rgba(255,255,255,0.9);
 		text-align: center;
 		margin-top: 1em;
@@ -333,7 +334,7 @@ h2 {
 
 
 .slicknav_menu {
-	background: #eee !important;
+	background: transparent !important;
 	a:link, a:visited {
 		color: #999;
 	}
@@ -422,5 +423,31 @@ h2 {
 	}
 	a:hover {
 		color: rgba(255,255,255,0.9);
+	}
+}
+
+#menu-mobile {
+	position: absolute;
+	top: 1.8em;
+	width: 100%;
+	z-index: 99;
+}
+
+@media only screen and (max-width: 401px) {
+	.jumbotron {
+		.img {
+			width: 35%;
+			margin-bottom: 1em;
+		}
+		.lead {
+			font-size: 34px;
+		}
+		.lead-sub {
+			font-size: 1.2em;
+		}
+	}
+
+	.nav {
+		width: 100%;
 	}
 }
