@@ -110,12 +110,10 @@ h2 {
 }
 
 .jumbotron-wrapper {
-	background: url(/img/earth-outline.jpg);
-	background-size: cover;
-	background-attachment: fixed;
 	color: white !important;
 	height: 90vh;
 	position: relative;
+	background: #000;
 	.container {
 		position: absolute;
 	  top: 50%;
@@ -364,6 +362,19 @@ h2 {
 	border: none;
 }
 
+.jumbotron-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: red;
+	background: url(/img/earth-outline-intense.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+	animation: fadingInSlow 5s ease-in forwards;
+}
 
 .work-wrapper {
 	padding-top: 6em;
@@ -454,4 +465,9 @@ h2 {
 
 .slicknav_nav {
 	background: white;
+}
+
+@keyframes fadingInSlow {
+    from { opacity: 1.0; }
+    to { opacity: 0.3; }
 }
