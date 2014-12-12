@@ -430,7 +430,7 @@ h2 {
 	position: absolute;
 	top: 1.8em;
 	width: 100%;
-	z-index: 99;
+	z-index: 9999;
 }
 
 @media only screen and (max-width: 401px) {
@@ -450,4 +450,8 @@ h2 {
 	.nav {
 		width: 100%;
 	}
+}
+
+.slicknav_nav {
+	background: white;
 }
