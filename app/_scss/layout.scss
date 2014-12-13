@@ -444,22 +444,32 @@ h2 {
 	z-index: 9999;
 }
 
-@media only screen and (max-width: 401px) {
+@media only screen and (max-width: 776px) {
 	.jumbotron {
+		&.container {
+			width: 300px;
+		}
 		.img {
-			width: 35%;
+			width: 25%;
 			margin-bottom: 1em;
 		}
 		.lead {
-			font-size: 34px;
+			font-size: 2em;
 		}
 		.lead-sub {
-			font-size: 1.2em;
+			font-size: 0.9em;
+			width: 90%;
 		}
 	}
 
 	.nav {
 		width: 100%;
+	}
+
+	.cta {
+		.btn.btn-jumbo:link, .btn.btn-jumbo:visited {
+			font-size: 1em;
+		}
 	}
 }
 
