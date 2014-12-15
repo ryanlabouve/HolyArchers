@@ -35,7 +35,9 @@ header h1 {
 }
 
 .btn:hover {
-	background: rgba($c--secondary-1, .3);
+	background: white;
+	color: $c--dark !important;
+	border: 1px solid $c--dark;
 	box-shadow: 0;
 }
 
